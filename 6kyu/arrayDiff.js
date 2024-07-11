@@ -13,4 +13,4 @@ function arrayDiff(a, b) {
     
   }
 
-  console.log(arrayDiff([1,2,2,3],[2]))
+  console.log(arrayDiff([1,2,2,3],[2])) //Logs [1,3] to console. 
