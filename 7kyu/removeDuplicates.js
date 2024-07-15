@@ -16,4 +16,4 @@ function solve(arr) {
     return arr.filter((val, i)=> arr.lastIndexOf(val)===i)
 }
 
-console.log(solve([3,4,5,6,4,3]))
+console.log(solve([3,4,5,6,4,3])) // returns [5,6,4,3]
