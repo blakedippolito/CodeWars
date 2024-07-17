@@ -38,3 +38,13 @@ class Block{
 let block = new Block([2,4,6])
 console.log(block.getVolume())
 console.log(block.getSurfaceArea()) 
+
+function alternateCase(s) {
+    return s.split('').map((item)=> {
+       if (item === item.toLowerCase()) {
+         return item.toUpperCase()
+       } else {
+        return item.toLowerCase()
+       }
+      })
+}
