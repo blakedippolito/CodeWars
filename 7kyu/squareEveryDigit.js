@@ -8,6 +8,8 @@
 // Note: The function accepts an integer and returns an integer.
 
 // Happy Coding!
+
+
 function squareDigits(num) {
   return Number(
     num
