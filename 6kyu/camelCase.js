@@ -8,20 +8,18 @@
 // "The_Stealth-Warrior" gets converted to "TheStealthWarrior"
 
 function toCamelCase(str) {
-    if (str.length === 0) return '';
-  
-    let match = ['-', '_'];
-    let result = [];
-  
-    for (let i = 0; i < str.length; i++) {
-      if (!match.includes(str[i])) {
-        result.push(str[i]);
-      } else if (i + 1 < str.length) {
-        result.push(str[i + 1].toUpperCase());
-        i++;
-      }
+  if (str.length === 0) return "";
+
+  let match = ["-", "_"];
+  let result = [];
+
+  for (let i = 0; i < str.length; i++) {
+    if (!match.includes(str[i])) {
+      result.push(str[i]);
+    } else if (i + 1 < str.length) {
+      result.push(str[i + 1].toUpperCase());
+      i++;
     }
-    return result.join('');
   }
-  
-  
+  return result.join("");
+}
